@@ -1,6 +1,3 @@
-// Phone Bill Project 
-// Dr. Abdunabi 
-
 package PP2;
 
 import javax.swing.JOptionPane;
