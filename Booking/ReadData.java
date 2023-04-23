@@ -1,7 +1,3 @@
-//Name: Arjit Gupta
-//Date: 30th March 2023
-//Assignment: PA03
-
 package PA03;
 import java.util.Scanner;
 
