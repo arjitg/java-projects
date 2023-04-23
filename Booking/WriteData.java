@@ -1,7 +1,3 @@
-//Name: Arjit Gupta
-//Date: 30 March 2023
-//Assignment: PA03
-
 package PA03;
 import java.io.File;
 import java.io.FileNotFoundException;
