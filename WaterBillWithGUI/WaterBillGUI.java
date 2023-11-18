@@ -176,7 +176,9 @@ public class WaterBillGUI extends JFrame implements ActionListener{
 		    // use if statement to call proper methods to process user events
 			// To Complete
 			if(e.getSource() == this.btnClose)
-				this.btnCloseClicked();
+				{
+				    this.btnCloseClicked();
+				}
 			else if (e.getSource() == this.btnSave)
 				try {
 					this.btnSaveClicked();
@@ -461,12 +463,14 @@ public class WaterBillGUI extends JFrame implements ActionListener{
 				boolean stop = false;
 				   //declare array variables
 		        while (!stop) 
-				try {
+				{
+				    try {
 				numberOfcustomers = Integer.parseInt(JOptionPane.showInputDialog("Enter number of Customers:"));
 				stop = true;
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(null, "Program Exit!");
 				
+				}
 				}
 				
 				
