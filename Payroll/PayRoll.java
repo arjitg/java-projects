@@ -2,7 +2,8 @@ package PP03;
 
 // import java.io.FileNotFoundException;
 // import java.text.DateFormat;
-// import java.text.ParseException;
+
+import io.github.pixee.security.BoundedLineReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
@@ -73,7 +74,7 @@ public class PayRoll {
 			String initValue="";
 			BufferedReader br = null;
 			br = new BufferedReader(new FileReader(fileName));
-			while ((line = br.readLine()) != null) {
+			while ((line = BoundedLineReader.readLine(br, 5_000_000)) != null) {
 				String[] stringArr = line.split(",");
 				JOptionPane.showMessageDialog(null, line);
 				stringArr[0] = initValue;

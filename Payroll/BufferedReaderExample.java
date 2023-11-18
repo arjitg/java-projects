@@ -1,5 +1,6 @@
 package PP03;
-// package TechStore;
+
+import io.github.pixee.security.BoundedLineReader;
 import java.io.BufferedReader;
 import java.io.FileReader;
  
@@ -9,7 +10,7 @@ public class BufferedReaderExample {
 		try {
 			String line;
 			br = new BufferedReader(new FileReader(fileName)); 
-			while ((line = br.readLine()) != null) {
+			while ((line = BoundedLineReader.readLine(br, 5_000_000)) != null) {
 				String[] stringArr = line.split(",");
 				for (String s: stringArr)
 				   System.out.print(s + ";" + "");			
